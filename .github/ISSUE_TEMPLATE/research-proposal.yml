@@ -1,0 +1,42 @@
+name: Research idea or observation
+description: Propose a task, covering, experiment or useful observation.
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: "Start with one object or task. A sketch or observation is welcome; you do not need a finished prototype."
+  - type: dropdown
+    id: stage
+    attributes:
+      label: What stage is this at?
+      options:
+        - Concept or question
+        - Experiment proposal
+        - Prototype in progress
+        - Observations from a test
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: The task and question
+      description: What is the hand trying to do, with which object, and what would you like to understand?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea or observation
+      description: Explain the covering, material or sensing approach. Add a labeled sketch or photo if useful. Separate observations from expectations.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: How could we explore it?
+      description: What would you compare, what would stay fixed, and what would you record? Leave this open if you are looking for help.
+  - type: textarea
+    id: links
+    attributes:
+      label: Related discussion and references
+      description: Link any related Zelax Lab conversation and identify the source and reuse terms of shared files.
